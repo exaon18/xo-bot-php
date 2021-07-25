@@ -1,6 +1,6 @@
 <?php
 
-define('BOT_TOKEN', 'Your Token Here');
+define('BOT_TOKEN', ' 1914384276:AAFyToH6vqCMCHMf8MK2ku77-q4sB3mHPj0  ');
 define('API_URL', 'https://api.telegram.org/bot'.BOT_TOKEN.'/');
 
 function apiRequestWebhook($method, $parameters) {
@@ -151,10 +151,10 @@ function processMessage($message) {
     if (strpos($text, "/start") === 0) {
       apiRequestJson("sendMessage", array('chat_id' => $chat_id, "text" => "XO Game
 Best simple game ever you play
-just press start xo game to play with your friend", 'reply_markup' => array(
+just press start xo game to play with your friend, its just beta Exaon is working on it", 'reply_markup' => array(
             "inline_keyboard"=>array(
-			    array(array("text"=>"Programmer 1","url"=>"https://telegram.me/msmsepehr"),
-				array("text"=>"Programmer 2","url"=>"https://telegram.me/Sadeq2009")),
+			    array(array("text"=>"Programmer 1","url"=>"https://telegram.me/Exaon"),
+				array("text"=>"channel","url"=>"https://telegram.me/t_e_h_f")),
 			    array(array("text"=>"Start XO Game","switch_inline_query"=>md5(date("YMDms"))))
 			)
 		)));
